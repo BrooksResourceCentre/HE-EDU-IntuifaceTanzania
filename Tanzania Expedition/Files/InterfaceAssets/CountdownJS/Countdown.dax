@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="Countdown" Description="Countdown DA" Category="Time" Author="IntuiLab S.A" AuthorId="IntuiLab" Icon="Countdown.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="6316">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space/Middle/Default template for Countdown" CreateAsCollectionSibling="true">
+    <Collection Name="Default template for Countdown" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:150]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:500]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:276]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:75]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+        </Properties>
+      </Asset>
+      <Collection Name="Group text" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <Properties>
+          <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+          <Property Type="Visual" Name="ItemHeight"><![CDATA[value:300]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:75]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:150]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+        </Properties>
+        <Asset Name="Text for &lt;Hours&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Countdown/formattedHours]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:40]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Minutes&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Countdown/formattedMinutes]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text for &lt;Seconds&gt;" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Countdown/formattedSeconds]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:60]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:190]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:35]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text separator H M" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value::]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:20]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:77]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:32]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Asset Name="Text separator M S" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value::]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+            <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:20]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:152]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:32]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Collection Name="Group finished" Visual="Group" Style="" Container="No resize" ContainerStyle="">
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+          <Property Type="Visual" Name="InitialHeight"><![CDATA[value:50]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:36]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:False]]></Property>
+        </Properties>
+        <Asset Name="Text finished" Visual="DefaultText" Style="" Container="Scale" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFF09C4C]]></Property>
+            <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:24.999999999999996]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:49.999999999999993]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:140]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:30]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Finished]]></Property>
+          </Properties>
+        </Asset>
+      </Collection>
+      <Asset Name="Group separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:75]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button play" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Countdown/" Type="Domain" Name="start" Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFE6E6E6]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="TextMargin"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:34]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:40]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/e4b2220a-bcbd-4b4c-bd32-48783de9ce63]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/e2525ef4-a4d2-4b02-a5a8-cecb494dc3c3]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button pause" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Countdown/" Type="Domain" Name="pause" Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFE6E6E6]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Microsoft Sans Serif]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:34]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/4df0cfa7-e4f2-4bdd-94e0-debeb8cd79f0]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/ff6cf68c-e5d2-4237-a7a0-b997ef301f03]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button reset" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Countdown/" Type="Domain" Name="reset" Delay="value:0.0" />
+            <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Countdown/Group%20finished/" Type="Container" Name="Hide" Delay="value:0">
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+            <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Countdown/Group%20text/" Type="Container" Name="Show" Delay="value:0">
+              <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+              <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+              <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+              <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+              <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+              <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+              <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+            </InvokeService>
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:190]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/acf3e8f9-5679-4987-bc31-66753f182672]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/fc76bb4b-aeed-4ba0-ae61-a021fd5fd208]]></Property>
+        </Properties>
+      </Asset>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Countdown" DescriptorPath="player://data/InterfaceAssets/CountdownJS/Countdown.ifd" ExternalAssetName="Countdown">
+      <Attachments>
+        <EventTrigger EventType="Domain" EventName="timeChanged">
+          <Conditions Operator="And">
+            <ComparisonCondition Operator="Equal">
+              <LeftOperand>
+                <ArgumentParameter ArgumentName="hours" />
+              </LeftOperand>
+              <RightOperand>
+                <ValueParameter Value="value:0" />
+              </RightOperand>
+            </ComparisonCondition>
+            <ComparisonCondition Operator="Equal">
+              <LeftOperand>
+                <ArgumentParameter ArgumentName="minutes" />
+              </LeftOperand>
+              <RightOperand>
+                <ValueParameter Value="value:0" />
+              </RightOperand>
+            </ComparisonCondition>
+            <ComparisonCondition Operator="Equal">
+              <LeftOperand>
+                <ArgumentParameter ArgumentName="seconds" />
+              </LeftOperand>
+              <RightOperand>
+                <ValueParameter Value="value:0" />
+              </RightOperand>
+            </ComparisonCondition>
+          </Conditions>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Countdown/Group%20finished/" Type="Container" Name="Show" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+          <InvokeService Target="mashup://visuals/mashup_root_1/Default%20template%20for%20Countdown/Group%20text/" Type="Container" Name="Hide" Delay="value:0">
+            <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
+            <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
+            <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
+            <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
+            <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
+            <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
+            <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
+          </InvokeService>
+        </EventTrigger>
+      </Attachments>
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Countdown.ifd" Length="7351" LastModificationDate="2015-04-02T11:02:14Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/EventEmitter.js" Length="16040" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Countdown.js" Length="5257" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/icon_countdown_32.png" Length="524" LastModificationDate="2015-03-24T15:52:56Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Countdown.dax" Length="30531" LastModificationDate="2015-03-24T16:07:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Countdown.png" Length="2095" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/icon_time_32.png" Length="1387" LastModificationDate="2014-09-09T15:53:13.3046072Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2015-03-16T10:45:58Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/PauseButtonIcon_black.png" Length="253" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/PauseButtonIcon_white.png" Length="259" LastModificationDate="2015-03-16T10:45:58Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/PlayButtonIcon_black.png" Length="301" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/PlayButtonIcon_white.png" Length="391" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/RefreshButtonIcon_black.png" Length="515" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/CountdownJS/Data/Images/RefreshButtonIcon_white.png" Length="638" LastModificationDate="2015-03-16T10:45:58Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="e4b2220a-bcbd-4b4c-bd32-48783de9ce63" Type="uri" Length="301" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/PlayButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/7d0dad7c385549db84482f3c5e760c77.png" Width="70" Height="70" Length="583" LastModificationDate="2015-04-06T21:26:18.2725505Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="e2525ef4-a4d2-4b02-a5a8-cecb494dc3c3" Type="uri" Length="391" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/PlayButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/108044ca2f162af3b9978c61cff2e2cf.png" Width="76" Height="76" Length="454" LastModificationDate="2015-04-06T21:26:18.2745506Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="4df0cfa7-e4f2-4bdd-94e0-debeb8cd79f0" Type="uri" Length="259" LastModificationDate="2015-03-16T10:45:58Z" DefaultValue="player://data/Images/PauseButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/fb5c27c88dff8ac980353f03918ee2f8.png" Width="76" Height="76" Length="257" LastModificationDate="2015-04-06T21:26:18.2735506Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="ff6cf68c-e5d2-4237-a7a0-b997ef301f03" Type="uri" Length="253" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/PauseButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/d7c967a9b107cb21b46901d41eccf558.png" Width="76" Height="76" Length="253" LastModificationDate="2015-04-06T21:26:18.2725505Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="acf3e8f9-5679-4987-bc31-66753f182672" Type="uri" Length="638" LastModificationDate="2015-03-16T10:45:58Z" DefaultValue="player://data/Images/RefreshButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/8e36514ff8fa38887d8feff7a3b04369.png" Width="76" Height="76" Length="760" LastModificationDate="2015-04-06T21:26:18.2745506Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="fc76bb4b-aeed-4ba0-ae61-a021fd5fd208" Type="uri" Length="515" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/RefreshButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/d954b6a2b7670eface61d69b824610da.png" Width="76" Height="76" Length="666" LastModificationDate="2015-04-06T21:26:18.2725505Z" />
+    </Resource>
+  </MashupResource>
+</Mashup>

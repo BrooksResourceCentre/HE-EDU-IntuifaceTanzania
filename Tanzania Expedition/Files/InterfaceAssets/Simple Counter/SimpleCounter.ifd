@@ -1,0 +1,169 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "counter_js:v1",
+  "name": "Simple Counter",
+  "if.category": "Value Operators",
+  "version": "v3.1",
+  "title": "Simple Counter",
+  "protocol": "js",
+  "if.jsEngine": 2,
+  "basePath": "SimpleCounter",
+  "if.dependencies": [
+    "EventEmitter.js",
+    "SimpleCounter.js"
+  ],
+  "icons": {
+    "x32": "icon_counter_32.png"
+  },
+  "schemas": {
+    "SimpleCounter": {
+      "id": "SimpleCounter",
+      "type": "object",
+      "description": "Simple Counter to add/substract values",
+      "properties": {
+        "InitialValue": {
+          "type": "integer",
+          "title": "Initial value",
+          "description": "The number from which counting should start",
+          "default": "0"
+        },
+        "Count": {
+          "type": "integer",
+          "description": "The current counting value",
+          "readonly": true,
+          "default": "0"
+        },
+        "CoerceValue": {
+          "type": "boolean",
+          "title": "Limit count to min and max values",
+          "description": "Force value to be between min and max",
+          "default": false
+        },
+        "MinValue": {
+          "type": "integer",
+          "title": "Minimum value",
+          "description": "The number from which counting should start",
+          "default": "0"
+        },
+        "MaxValue": {
+          "type": "integer",
+          "title": "Maximum value",
+          "description": "The number from which counting should start",
+          "default": "100"
+        }
+      }
+    }
+  },
+  "resources": {
+    "SimpleCounter": {
+      "id": "SimpleCounter",
+      "if.interfaceAsset": "true",
+      "title": "Simple Counter",
+      "description": "Tracks count as you add and substract values",
+      "if.templateDesignAccelerator": "Simple Counter.dax",
+      "methods": {
+        "AddOne": {
+          "id": "SimpleCounter.AddOne",
+          "path": "AddOne",
+          "title": "Add One",
+          "description": "Add 1 to the counter",
+          "response": {
+            "type": "none"
+          }
+        },
+        "SubstractOne": {
+          "id": "SimpleCounter.SubtractOne",
+          "path": "SubstractOne",
+          "title": "Subtract One",
+          "description": "Subtract 1 from the counter",
+          "response": {
+            "type": "none"
+          }
+        },
+        "Add": {
+          "id": "SimpleCounter.Add",
+          "path": "Add",
+          "description": "Add a specified value to the counter",
+          "parameters": {
+            "value": {
+              "type": "integer",
+              "format": "int64",
+              "description": "Value to add",
+              "default": "1"
+            }
+          },
+          "response": {
+            "type": "none"
+          }
+        },
+        "Substract": {
+          "id": "SimpleCounter.Subtract",
+          "path": "Substract",
+          "title": "Subtract",
+          "description": "Subtract a specified value from the counter",
+          "parameters": {
+            "value": {
+              "type": "integer",
+              "format": "int64",
+              "description": "Value to Substract",
+              "default": "1"
+            }
+          },
+          "response": {
+            "type": "none"
+          }
+        },
+        "SetNewCountValue": {
+          "id": "SimpleCounter.SetNewCountValue",
+          "path": "SetNewCountValue",
+          "title": "Set Value",
+          "description": "Sets a specific value",
+          "parameters": {
+            "value": {
+              "type": "integer",
+              "format": "int64",
+              "description": "Value to set",
+              "default": "0"
+            }
+          },
+          "response": {
+            "type": "none"
+          }
+        },
+        "Reset": {
+          "id": "SimpleCounter.Reset",
+          "path": "Reset",
+          "description": "Reset the counter",
+          "response": {
+            "type": "none"
+          }
+        }
+      },
+      "events": {
+        "CountChanged": {
+          "id": "CountChanged",
+          "title": "Count changes",
+          "properties": {
+            "Count": {
+              "description": "The new count value",
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "m5To93y9HfqIjBrqtfFYaPWWHpnW4i1q0U8bDBitoxk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN5",
+      "isTrial": false,
+      "v": 2,
+      "data": "AdSbX8hJoxfjAYCKrsWL9hpx8a3zR1NH1l8Jq3k+8IY1n+J7s7snM0ORc3M2T8H9E5C+kGozfPhEVnFG7YfRLJfnOAIOjIAeaO6Ue/mSJRbk3KEnrD9dqR+wN4PcFR0ZZyYglX32969a9RugEC6FuSJUckoEgeLs5VX1bkj8Q0eVx8luOEy3xLf+h1dxR+onnTHQQ+oBpfijKuwxwr/fzG6vctmryT00FjyporwNp3waZKE2vPNe3ZAOOv5qgcEuuOnug17SBu16CRbqHWEuaUTMLcjaY7T80NgdwQwMbYcq4uUJlMe0hgDJ4qK3OHlL63HAoUmrG34ltMQtZChXkG+Wp9PDKnrkfMd8fl2mUZfWx+puvaxWN4C1OKMtC1hK18MdzCo2tqSCoqaXKZxj5/Ul+Ah1TbCdB+CyxplHJuQ1xPiux3yNgrRz+VuyvVAhRSZCnU+DXvgPz0BaYXFjlOXsJn4cmdAmLyKmvzX2anc5tIU9wsNBbTITiYuicRVRARbn7b6tHgP79hAjpuMcg5XP5j5+cy9zULMBaAOv5zwM0NTcwS7djuft5zx9d7V9VLcFvNlKDsb4hwDQ9TjriAeDY8RQqzcrxZKc9LFYpe8gEUGTHWpCatiDTkwoMhz6XjwJK9TIZOAEddjvOYppTrrD3jVB6JCgbRmGIzEWKwGGvHBvQz1EaKhque9KyIYvLa4UiFR0BrsEWdiFPNNBcINDYaE2ygYy6dwQjzUJKLouqUlFZ8HNSMn1+D3kLEfDW3Rw8mJjK5zFlbz28mm7Q4okP+Qw9V2uLyrzTSFHWt8MCiCOFUtP7qNooHpOrUzyKRRBWr4LGa4IwrpdS6sfBfkcEwh9w5WCfWg7qkWrw53r/+PDO9mistEqltEs3uKvm+NWrf0G3oqFyjx7yc94odmREzo5uf253wopveiL98eR0mQdU2606mxC5BGC/RB6vUt/kI02UYClh4RDIo35KtTGUOyo3HQLnJqM4Bmq64BDCOvWYfwHHXSCMZs6i9GfY84iOxlxPChdfrzdottrs9gWOth5oZSWUCd8SLruq0psxrg+aEkZpipe+D9m0dWF",
+      "key": "rAJRmcx4c3ac4IBOmlqiCgzQ22jz842cxpm7IKZiaFzBEgaerTVRk4qHlls+6NYz1cJFGLZ06Ypgbk2WSDMk6SzCXIrosfq0AAbPAUvwQSK/Ncn2BDmTMoBIVyx7oeYCiIcpkKuN6OapwfVTMTHoCHUvPAret1sw1B1xz/w9RRZgr6igNpuEsh0e7ba/DfqTmYi1ZvR0OUN863m4kVpzcdGxW6vjpU2WhH05jwBI4TzpZhv2dDIE9l3SIQQlCUADWL95bYYPUg7Te1pQj2hiaQfI6TBLnw4JMYUjlTi3lY75HKKeVlNC2cOjroDozsT3YQwDQFVK9/N+harM8PoEJA==",
+      "iv": "Q1ocba6XPMufD29FQQmKy23fV7urpZgFncgmpvTbJCjnl/yTsDJzcmclH9U/YwhCkGPcqVdRCUy0gk8ewgH5QV4Z9a2uCGlfwbPsCgairuEEf2fcYYMkaQC+vsqG0OWmG5woY34PJuK8dXXXLwQEIlkO4X2ZXRGzDroyjtCVw6RlYqRMK7NK+8T4+A9Aj4wKtDblPnCiQ1X6Zsq1vyhcndPIgcSKVZZcqz4ybnAfwMJdR/w08yaxzDX1Y2KYqqMyK/+hf9IVHnbUzyo46oxSaJZFzfulHP2I7VTsJFUuAZAf9y+mYVy+NlEZwuv7Ss5chF1APO6N4UW2hbNP0yLjiQ=="
+    }
+  }
+}

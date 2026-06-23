@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mashup ApiNumber="12" Name="Simple Counter" Description="Simple Counter DA" Category="Value Operators" Author="IntuiLab S.A" AuthorId="IntuiLab" Icon="Simple Counter.png" OriginalLocalPath=".\Local" OriginalDataPath=".\Data" OriginalProcessID="6316">
+  <MashupSpace ContextAlias="CURRENT_SPACE" Name="mashup_root_0" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space">
+    <Space Name="Space" AutoReset="false" BackgroundColor="#FF000000" />
+  </MashupSpace>
+  <MashupCollection Name="mashup_root_1" OriginalAbsoluteVisualPath="player://visuals/DA-update/Space/Middle/Default template for Simple Counter" CreateAsCollectionSibling="true">
+    <Collection Name="Default template for Simple Counter" Visual="Group" Style="" Container="Static" ContainerStyle="">
+      <Properties>
+        <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        <Property Type="Container" Name="MinWidth"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MinHeight"><![CDATA[value:100]]></Property>
+        <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+        <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+        <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+        <Property Type="Visual" Name="InitialWidth"><![CDATA[value:230]]></Property>
+        <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+        <Property Type="Visual" Name="InitialHeight"><![CDATA[value:150]]></Property>
+        <Property Type="Container" Name="X"><![CDATA[value:500]]></Property>
+        <Property Type="Container" Name="Y"><![CDATA[value:459]]></Property>
+      </Properties>
+      <Asset Name="Background" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9D0D0D0]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:5]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:75]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:150]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Text for &lt;Count&gt;" Visual="DefaultText" Style="" Container="Default" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Domain" Name="Text"><![CDATA[mashup://externals/Simple%20Counter/Count]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:33.75]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:50]]></Property>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:38]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:196]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Group separator" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+        <Properties>
+          <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BorderColor"><![CDATA[value:#00000000]]></Property>
+          <Property Type="Visual" Name="CornerRadius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#D9343333]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:230]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:1]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:75]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button minus" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Simple%20Counter/" Type="Domain" Name="SubstractOne" Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="TextMargin"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:40]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:45]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/a65e1955-a84e-41cd-bca0-2ed41b1e5f46]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/036ff5dd-6712-4776-b2d1-1cd3a77f0ed5]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button more" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Simple%20Counter/" Type="Domain" Name="AddOne" Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Visual" Name="TextMargin"><![CDATA[value:0]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:115]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:45]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/41922b86-d5dd-4137-a4ec-0e52eb2fe397]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/ab66896d-6ee9-4ff8-9693-9e048d170f0a]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Button resset" Visual="ImageButton" Style="" Container="Default" ContainerStyle="" Domain="value:VisibleTrigger">
+        <Attachments>
+          <EventTrigger EventType="Visual" EventName="Released">
+            <InvokeService Target="mashup://externals/Simple%20Counter/" Type="Domain" Name="Reset" Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="Radius"><![CDATA[value:0]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00FFFFFF]]></Property>
+          <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+          <Property Type="Visual" Name="Font"><![CDATA[value:Verdana]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:70]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:190]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:110]]></Property>
+          <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:14]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FF333333]]></Property>
+          <Property Type="Visual" Name="ReleasedImage"><![CDATA[player://resources/acf3e8f9-5679-4987-bc31-66753f182672]]></Property>
+          <Property Type="Visual" Name="PressedImage"><![CDATA[player://resources/fc76bb4b-aeed-4ba0-ae61-a021fd5fd208]]></Property>
+          <Property Type="Visual" Name="Text"><![CDATA[value:]]></Property>
+        </Properties>
+      </Asset>
+    </Collection>
+  </MashupCollection>
+  <MashupExternalAsset ContextAlias="ASSOCIATED_IA">
+    <ExternalAsset Name="Simple Counter" DescriptorPath="player://data/InterfaceAssets/Simple%20Counter/SimpleCounter.ifd" ExternalAssetName="SimpleCounter">
+      <Dependencies>
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/SimpleCounter.ifd" Length="6978" LastModificationDate="2015-04-02T11:02:14Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/EventEmitter.js" Length="16040" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/SimpleCounter.js" Length="5844" LastModificationDate="2015-03-16T10:46:06Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/icon_counter_32.png" Length="478" LastModificationDate="2015-03-24T15:52:56Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Simple Counter.dax" Length="15636" LastModificationDate="2015-03-24T16:07:30Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Simple Counter.png" Length="1135" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/DefaultAssets/DefaultMinimized.png" Length="5250" LastModificationDate="2015-03-16T10:45:58Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/MinimizeButtonIcon_black.png" Length="189" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/MinimizeButtonIcon_white.png" Length="190" LastModificationDate="2015-03-16T10:45:58Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/MoreButtonIcon_black.png" Length="1129" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/MoreButtonIcon_white.png" Length="1145" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/RefreshButtonIcon_black.png" Length="515" LastModificationDate="2015-03-24T15:09:26Z" />
+        <Dependency URI="player://data/InterfaceAssets/Simple Counter/Data/Images/RefreshButtonIcon_white.png" Length="638" LastModificationDate="2015-03-16T10:45:58Z" />
+      </Dependencies>
+    </ExternalAsset>
+  </MashupExternalAsset>
+  <MashupResource>
+    <Resource Key="a65e1955-a84e-41cd-bca0-2ed41b1e5f46" Type="uri" Length="189" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/MinimizeButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/7160ba30aaf8e51b23b7642b981bee22.png" Width="70" Height="70" Length="219" LastModificationDate="2015-03-20T17:38:46.871253+01:00" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="036ff5dd-6712-4776-b2d1-1cd3a77f0ed5" Type="uri" Length="190" LastModificationDate="2015-03-16T10:45:58Z" DefaultValue="player://data/Images/MinimizeButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/6be09e5f6877ac191eb44af76655c830.png" Width="70" Height="70" Length="238" LastModificationDate="2015-03-20T15:36:28.9315469+01:00" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="41922b86-d5dd-4137-a4ec-0e52eb2fe397" Type="uri" Length="1145" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/MoreButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/9905bd51a8e9ab98318cb092a264de1c.png" Width="70" Height="70" Length="399" LastModificationDate="2015-03-20T17:38:46.8992546+01:00" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="ab66896d-6ee9-4ff8-9693-9e048d170f0a" Type="uri" Length="1129" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/MoreButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/bc968e5a7fcdade2a46fb6524212b1f8.png" Width="70" Height="70" Length="354" LastModificationDate="2015-03-20T17:38:46.9032548+01:00" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="acf3e8f9-5679-4987-bc31-66753f182672" Type="uri" Length="638" LastModificationDate="2015-03-16T10:45:58Z" DefaultValue="player://data/Images/RefreshButtonIcon_white.png">
+      <Alternate Value="player://data/Generated/8e36514ff8fa38887d8feff7a3b04369.png" Width="76" Height="76" Length="760" LastModificationDate="2015-04-06T21:26:18.2745506Z" />
+    </Resource>
+  </MashupResource>
+  <MashupResource>
+    <Resource Key="fc76bb4b-aeed-4ba0-ae61-a021fd5fd208" Type="uri" Length="515" LastModificationDate="2015-03-24T15:09:26Z" DefaultValue="player://data/Images/RefreshButtonIcon_black.png">
+      <Alternate Value="player://data/Generated/d954b6a2b7670eface61d69b824610da.png" Width="76" Height="76" Length="666" LastModificationDate="2015-04-06T21:26:18.2725505Z" />
+    </Resource>
+  </MashupResource>
+</Mashup>

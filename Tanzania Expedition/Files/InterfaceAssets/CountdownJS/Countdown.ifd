@@ -1,0 +1,222 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "countdownjs:v1",
+  "name": "CountdownJS",
+  "version": "v1.4",
+  "title": "Countdown",
+  "if.category": "Time",
+  "protocol": "js",
+  "basePath": "Countdown",
+  "if.dependencies": [
+    "EventEmitter.js",
+    "Countdown.js"
+  ],
+  "icons": {
+    "x32": "icon_countdown_32.png"
+  },
+  "schemas": {
+    "Countdown": {
+      "id": "Countdown",
+      "type": "object",
+      "description": "Countdown",
+      "properties": {
+        "seconds": {
+          "title": "Seconds",
+          "type": "integer",
+          "description": "Current second",
+          "default": 10
+        },
+        "minutes": {
+          "title": "Minutes",
+          "type": "integer",
+          "description": "Current minute",
+          "default": 0
+        },
+        "hours": {
+          "title": "Hours",
+          "type": "integer",
+          "description": "Current hour",
+          "default": 0
+        },
+        "days": {
+          "title": "Days",
+          "type": "integer",
+          "description": "Current day",
+          "default": 0
+        },
+        "formattedSeconds": {
+          "title": "Formatted seconds",
+          "type": "string",
+          "description": "Current second, formatted with 2 digits",
+          "readonly": true,
+          "default": "10"
+        },
+        "formattedMinutes": {
+          "title": "Formatted minutes",
+          "type": "string",
+          "description": "Current minute, formatted with 2 digits",
+          "readonly": true,
+          "default": "00"
+        },
+        "formattedHours": {
+          "type": "string",
+          "title": "Formatted hours",
+          "description": "Current hour, formatted with 2 digits",
+          "readonly": true,
+          "default": "00"
+        },
+        "time": {
+          "title": "Time",
+          "type": "string",
+          "description": "Current formatted time",
+          "readonly": true,
+          "default": "00:00:10"
+        },
+        "totalDays": {
+          "title": "Remaining duration in days",
+          "type": "number",
+          "description": "Remaining total days",
+          "readonly": true,
+          "default": "0"
+        },
+        "totalHours": {
+          "title": "Remaining duration in hours",
+          "type": "number",
+          "description": "Remaining total hours",
+          "readonly": true,
+          "default": "0"
+        },
+        "totalMinutes": {
+          "title": "Remaining duration in minutes",
+          "type": "number",
+          "description": "Remaining total minutes",
+          "readonly": true,
+          "default": "0"
+        },
+        "totalSeconds": {
+          "title": "Remaining duration in seconds",
+          "type": "number",
+          "description": "Remaining total seconds",
+          "readonly": true,
+          "default": "0"
+        }
+      }
+    }
+  },
+  "resources": {
+    "Countdown": {
+      "id": "Countdown",
+      "if.interfaceAsset": "true",
+      "templateDesignAccelerator": "Countdown.dax",
+      "title": "Countdown",
+      "description": "Operations of countdown",
+      "methods": {
+        "start": {
+          "id": "Countdown.start",
+          "path": "start",
+          "title": "Start",
+          "description": "Start the countdown",
+          "response": {
+            "type": "none"
+          }
+        },
+        "pause": {
+          "id": "Countdown.pause",
+          "path": "pause",
+          "title": "Pause",
+          "description": "Pause the countdown",
+          "response": {
+            "type": "none"
+          }
+        },
+        "reset": {
+          "id": "Countdown.reset",
+          "path": "reset",
+          "title": "Reset",
+          "description": "Reset the countdown",
+          "response": {
+            "type": "none"
+          }
+        }
+      },
+      "events": {
+        "timeChanged": {
+          "id": "timeChanged",
+          "title": "Time changed",
+          "properties": {
+            "hours": {
+              "description": "The new hours value",
+              "type": "integer"
+            },
+            "minutes": {
+              "description": "The new minutes value",
+              "type": "integer"
+            },
+            "seconds": {
+              "description": "The new seconds value",
+              "type": "integer"
+            }
+          }
+        },
+        "formattedSecondsChanged": {
+          "id": "FormattetdSecondsChanged",
+          "if.category": "Countdown",
+          "title": "Formatted seconds changed"
+        },
+        "formattedMinutesChanged": {
+          "id": "FormattedMinutesChanged",
+          "if.category": "Countdown",
+          "title": "Formatted minutes changed"
+        },
+        "formattedHoursChanged": {
+          "id": "FormattedHoursChanged",
+          "if.category": "Countdown",
+          "title": "Formatted hours changed"
+        },
+        "secondsChanged": {
+          "id": "SecondsChanged",
+          "if.category": "Countdown",
+          "title": "Seconds changed"
+        },
+        "minutesChanged": {
+          "id": "MinutesChanged",
+          "if.category": "Countdown",
+          "title": "Minutes changed"
+        },
+        "hoursChanged": {
+          "id": "HoursChanged",
+          "if.category": "Countdown",
+          "title": "Hours changed"
+        },
+        "daysChanged": {
+          "id": "DaysChanged",
+          "if.category": "Countdown",
+          "title": "Days changed"
+        },
+        "started": {
+          "id": "CountdownStarted",
+          "if.category": "Countdown",
+          "title": "Countdown started"
+        },
+        "paused": {
+          "id": "CountdownPaused",
+          "if.category": "Countdown",
+          "title": "Countdown paused"
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "dJGg/XX/SHkrt9QgPl95tNSUYUOhmZUnP8mD0JrABQs=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "SAPIN5",
+      "isTrial": false,
+      "v": 2,
+      "data": "3+V2DvfCXZde51xXmvzUavH6ddNhvJCRcYHijf526OPM+uezPI4QtXu4O0F21t/AG0O2QdOFx9nWRPtHJfCauuVS4VmHhHDJZ6RkRvePASjPkvbkBbXEDgZ4rzaCNZHBXcjIQ8hRKPc/BbrD4VtlKAaTgYHbJv+IJ6qq6PNEjKzt0Tv4c+hfI5q9XWTqgBA1EIw3vvrZblIPwq82fb3Jl5n5gtKpLAFYZDKvfCooFGgMSeKhT1Ikimojy44j0ENneVaQoT7yM3iWmvjCuZMfE3vaCREHXvnBR3YdEKLD2NNF6Dd5OdKt4tPEkDpyk/B1uWlJOg8OMYnAQPeZOHE6EGfIdyhuzvBop4hiKQhMXnwD2YW8ORF/Xa9ckVrutAgdmN/ERHqjTwGPIrTOhTy7JpPvkq97AVX1Gz2a8R0khKeTdKMZ95CirSki//vx731lEH3wnAE+irvQppy1vVo/RFPa7FlEr2IIC/455FNJ8sOFZWLJnvwSkaq5NQF8wuLtHWRqJqMi9HP9nDd2uT6k0soQOuYYSx9Z5UT/h/fejUyLspgzCW8JkHRfKHGg19QRNdqI+050/iGUbcPj2JWQCpu8CNnKJUxBBFF13VSIl9pspzHnbUt0FqEjud5kCr9CM3x8HN+KeMikVj36MjhhaabaqrwlCgoMMmMWskuz3tGEanof+zOkGUSdP1KX9Jf2h2MszyiTXRH+u5H0VksgTr9zdZ4HsBSuds4uRrrLDXh8vV5hNJrFTiEBdoQkkmFfwzNHgwcYOVFmluhvwXoB9EG/X2dY9sLGG7RRfv0+cX5ESam7XugOluXFAPA3I7D6+fAEMftScPgMINnFYspyEXD+8iuEsLpZatAOQOZQTvcDYXQc6p5piUCHe9FFlodxKUt2z/jHjHG0zGJL14j4Wqffp/LH+ai8GSvVuzL5w1A7JLc212AXqp1tc503GSF+SgFJjTcHyVCHy2RmJKjDR2nwgAcyyczG1lfIl0ssQq601lBDjXtB5ich2zry5T3vAJBLKvt6Oio1ilgJLRkLC++DYzBs3Kd8b3SRWrW58gX2YP7WLAnBgIgzOiFeidWT",
+      "key": "sSW6BG0UUuz97GdXF5hB1cs6r+P5hUSMoFpiFbLRgncKYr65dJS3FWhTlRxxaZCA1+lRkaPRKheZ+D2+SBEZzWaq2SEYPlNUfNwW3wP8afJp621kOEVc44qhDZw67wWrkRl/N9hCU0hKX2phiDc9tQEqAfQsoxnjm2EAGJKBzkQjMkUX25pC32bU7DIlGOlA5yyAP8E4ct9Mrfp+MXwp0fAEq/GvrzCgQ2yqn6gO3/vBdpWH+OrNoc3KUlwKvKv3V9Uk22L3ylvJRJgwx/70+Xg0dDDenWfvzyPYsW4hEeZ8mBw6aJp/jDRAq1EFs7wKkFvkhbbeWUn7BnPmyLhGoQ==",
+      "iv": "RoAA1eEj9IUTc+9s2FipdexS7oQ5jHirtsdR/JsxOcWEd/U5wxh+e1dBscn7+LyvfqoaoVnMKcsrg12H2F5aM6wspTMVNqG3yuXdfgvDsB8hvbOgbRmZFhzHL8OSrlLbz/lYM7NX244TdXMCJOhTwHrmm0daELE72+D6qUB4Gxk/uaPsovqX7Cl5613qgLmFKPChDjDe8kp7nJIyVRPzpQ9QlHpHfk6nMzQpuBsaubs49HpVw204bfEjYXmkribbSH2Oq/7GLBMCfq/FSW5hWE8RD627+PMhrw3TAkhcy0Clwkokp/JM0QfiO57oHZIyUbFiRWhZU7kVTZbTYeVNhg=="
+    }
+  }
+}
